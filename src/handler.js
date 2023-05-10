@@ -52,14 +52,7 @@ const getNoteByIdHandler = (request, h) => {
     return {
       status: 'success',
       data: {
-        note: {
-          id: note.id,
-          title: note.title,
-          tags: note.tags,
-          body: note.body,
-          createdAt: note.createdAt,
-          updatedAt: note.updatedAt,
-        },
+        note,
       },
     }
   }
